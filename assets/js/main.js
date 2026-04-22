@@ -1,14 +1,9 @@
 $(function () {
   var $window = $(window);
-  var $header = $(".site-header");
   var $menuToggle = $(".menu-toggle");
   var $mobileMenu = $("#mobile-menu");
   var $heroMedia = $(".js-hero-media");
   var $heroContent = $(".js-hero-content");
-
-  function syncHeaderState() {
-    $header.toggleClass("is-scrolled", $window.scrollTop() > 18);
-  }
 
   function closeMenu() {
     $menuToggle.removeClass("is-open").attr("aria-expanded", "false");
@@ -27,9 +22,6 @@ $(function () {
     }
   }
 
-  syncHeaderState();
-
-  $window.on("scroll", syncHeaderState);
   $window.on("resize", resetMenuOnDesktop);
 
   $menuToggle.on("click", function () {
