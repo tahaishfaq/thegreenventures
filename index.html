@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Green Ventures | Dubai Land Investment</title>
+    <meta
+      name="description"
+      content="The Green Ventures redesign concept for premium Dubai land and plot investments."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              pine: "#0f2f2a",
+              forest: "#17463d",
+              sage: "#b7cfbf",
+              sand: "#d7c4a7",
+              mist: "#eef4f1",
+              ink: "#071411",
+            },
+            fontFamily: {
+              display: ["Sora", "sans-serif"],
+              body: ["Manrope", "sans-serif"],
+            },
+            boxShadow: {
+              soft: "0 30px 70px rgba(7, 20, 17, 0.25)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-ink font-body text-mist antialiased home-page">
+    <div class="page-shell">
+      <header class="site-header absolute inset-x-0 top-0 z-50">
+        <div class="header-bar mx-auto grid max-w-[1480px] grid-cols-[1fr_auto] items-center gap-4 px-5 py-6 md:px-8 xl:grid-cols-[1fr_auto_1fr] xl:px-12">
+          <a href="#top" class="logo-wrap">
+            <span class="logo-mark">TheGreenVentures</span>
+          </a>
+
+          <nav class="nav-panel hidden items-center justify-center gap-6 xl:flex">
+            <a class="nav-link nav-link-active" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="land-investment-guide.html">Land Guide</a>
+            <a class="nav-link" href="blogs.html">Blogs</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+
+          <div class="header-socials hidden items-center justify-end gap-3 xl:flex">
+            <a class="social-link" href="https://x.com" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M18.244 2H21l-6.01 6.868L22 22h-5.49l-4.3-5.996L6.964 22H4.206l6.43-7.35L2 2h5.63l3.887 5.47zm-.963 18h1.525L6.808 3.894H5.17z"
+                ></path>
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.instagram.com" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2m0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95zm8.9 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4M12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85m0 1.8A3.35 3.35 0 1 0 15.35 12 3.36 3.36 0 0 0 12 8.65"
+                ></path>
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.facebook.com" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13.5 22v-8h2.68l.4-3h-3.08V9.08c0-.87.25-1.46 1.5-1.46h1.6V4.94a19.45 19.45 0 0 0-2.33-.12c-2.3 0-3.87 1.4-3.87 4v2.18H8v3h2.4v8z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <button
+            class="menu-toggle xl:hidden"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu xl:hidden">
+          <div class="mobile-menu-panel mx-5 rounded-[28px] px-5 py-5 shadow-soft">
+            <a class="mobile-link mobile-link-active" href="index.html">Home</a>
+            <a class="mobile-link" href="about.html">About us</a>
+            <a class="mobile-link" href="land-investment-guide.html">Land Guide</a>
+            <a class="mobile-link" href="blogs.html">Blogs</a>
+            <a class="mobile-link" href="contact.html">Contact</a>
+            <div class="mt-5 flex items-center gap-3">
+              <a class="social-link" href="https://x.com" aria-label="X">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M18.244 2H21l-6.01 6.868L22 22h-5.49l-4.3-5.996L6.964 22H4.206l6.43-7.35L2 2h5.63l3.887 5.47zm-.963 18h1.525L6.808 3.894H5.17z"
+                  ></path>
+                </svg>
+              </a>
+              <a class="social-link" href="https://www.instagram.com" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2m0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95zm8.9 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4M12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85m0 1.8A3.35 3.35 0 1 0 15.35 12 3.36 3.36 0 0 0 12 8.65"
+                  ></path>
+                </svg>
+              </a>
+              <a class="social-link" href="https://www.facebook.com" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M13.5 22v-8h2.68l.4-3h-3.08V9.08c0-.87.25-1.46 1.5-1.46h1.6V4.94a19.45 19.45 0 0 0-2.33-.12c-2.3 0-3.87 1.4-3.87 4v2.18H8v3h2.4v8z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero-shell relative min-h-screen overflow-hidden">
+          <div class="hero-media js-hero-media"></div>
+
+          <div class="relative z-10 mx-auto flex min-h-screen max-w-[1480px] flex-col justify-center px-5 pb-8 pt-28 md:px-8 md:pt-32 xl:px-12">
+            <div class="hero-content js-hero-content">
+              <div class="hero-intro">
+                <h1 class="hero-title font-display text-white">Buy Land in Dubai – Premium Plots for Sale</h1>
+                <p class="hero-description">
+                  Your trusted partner for commercial plots, residential land, and off-plan development opportunities.
+                  ROI 8-15% annually in tax-free UAE.
+                </p>
+                <div class="hero-cta-group">
+                  <a href="#about" class="hero-cta">
+                    Explore
+                    <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/arrow-right.svg" alt="" aria-hidden="true" />
+                  </a>
+                  <a href="land-investment-guide.html" class="hero-cta hero-cta-secondary">Investment Guide</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about-section px-5 py-24 md:px-8 md:py-28 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="grid gap-12 lg:grid-cols-[1fr_0.95fr] lg:gap-20">
+              <div>
+                <p class="section-kicker">About Green Ventures</p>
+                <h2 class="about-title">Dubai’s Trusted Land Investment Specialists</h2>
+              </div>
+              <div class="about-copy-wrap">
+                <p class="about-lead">
+                  We focus exclusively on land and plot investment opportunities across Dubai and the wider UAE,
+                  helping investors access premium sites with stronger long-term upside.
+                </p>
+                <p class="section-copy">
+                  Through our specialist network, Green Ventures connects local and international buyers to
+                  commercial land, residential plots, and select off-market opportunities chosen for location
+                  strength, development potential, and return performance.
+                </p>
+                <a href="#top" class="about-link">Learn More</a>
+              </div>
+            </div>
+
+            <div class="about-divider"></div>
+
+            <div class="about-stats">
+              <article class="about-stat">
+                <p class="about-stat-label">Plots</p>
+                <h3>Premium</h3>
+                <p>Commercial and residential land opportunities sourced across Dubai’s key growth corridors.</p>
+              </article>
+              <article class="about-stat">
+                <p class="about-stat-label">Investors</p>
+                <h3>Global</h3>
+                <p>Structured for both UAE-based buyers and international investors seeking tax-efficient growth.</p>
+              </article>
+              <article class="about-stat">
+                <p class="about-stat-label">Returns</p>
+                <h3>8-15%</h3>
+                <p>Targeting opportunities with strong annual ROI potential backed by location and demand drivers.</p>
+              </article>
+              <article class="about-stat">
+                <p class="about-stat-label">Approach</p>
+                <h3>End-to-End</h3>
+                <p>From sourcing and due diligence to negotiation and acquisition support in one seamless process.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="showcase-section px-5 py-24 md:px-8 md:py-28 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="about-showcase">
+              <img class="about-showcase-image" src="assets/images/GreenVentures-trust.jpg" alt="Luxury interior lounge" />
+              <div class="about-showcase-overlay">
+                <p class="section-kicker about-showcase-kicker">About Green Ventures</p>
+                <h2 class="about-showcase-title">Dubai’s Trusted Land Investment Specialists</h2>
+                <p class="about-showcase-copy">
+                  We specialize in premium commercial land, residential plots, and select off-market
+                  opportunities across Dubai and the UAE, helping investors move with more confidence and clarity.
+                </p>
+
+                <div class="about-showcase-faces" aria-hidden="true">
+                  <img class="about-showcase-avatar" src="https://i.pravatar.cc/96?img=12" alt="" />
+                  <img class="about-showcase-avatar" src="https://i.pravatar.cc/96?img=20" alt="" />
+                  <img class="about-showcase-avatar" src="https://i.pravatar.cc/96?img=33" alt="" />
+                  <img class="about-showcase-avatar" src="https://i.pravatar.cc/96?img=47" alt="" />
+                </div>
+
+                <div class="about-showcase-rating">
+                  <div class="about-showcase-stars">★ ★ ★ ★ ★</div>
+                  <p>Trusted by Investors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="services-intro">
+              <h2 class="services-heading">Explore Dubai Investment Areas</h2>
+              <p class="services-subcopy">
+                Premium land opportunities across Dubai's most sought-after locations. From emerging growth zones to
+                established luxury communities.
+              </p>
+            </div>
+
+            <div class="investment-grid">
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">Downtown Dubai</p>
+                  <span class="investment-badge">Premium Commercial</span>
+                </div>
+                <p class="investment-note">Prime CBD inventory with institutional-grade leasing demand and durable occupancy.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 1,500-2,500 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>6-8%</span></p>
+                </div>
+              </article>
+
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">Business Bay</p>
+                  <span class="investment-badge">Commercial Hub</span>
+                </div>
+                <p class="investment-note">Business-led district with strong absorption from office, retail, and mixed-use demand.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 500-800 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>8-12%</span></p>
+                </div>
+              </article>
+
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">Dubai South</p>
+                  <span class="investment-badge">Growth Zone</span>
+                </div>
+                <p class="investment-note">Value-entry corridor supported by logistics expansion and long-horizon infrastructure.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 80-150 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>12-18%</span></p>
+                </div>
+              </article>
+
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">Palm Jumeirah</p>
+                  <span class="investment-badge">Ultra Luxury</span>
+                </div>
+                <p class="investment-note">Trophy waterfront holdings focused on prestige, scarcity, and wealth preservation.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 2,000-4,000 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>5-7%</span></p>
+                </div>
+              </article>
+
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">Dubai Hills Estate</p>
+                  <span class="investment-badge">Luxury Residential</span>
+                </div>
+                <p class="investment-note">Family-centric master community with deep end-user demand and resilient pricing depth.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 300-450 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>8-10%</span></p>
+                </div>
+              </article>
+
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">Meydan</p>
+                  <span class="investment-badge">Emerging Premium</span>
+                </div>
+                <p class="investment-note">Rapidly maturing precinct positioned for uplift from premium planned developments.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 250-400 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>10-14%</span></p>
+                </div>
+              </article>
+
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">JVC</p>
+                  <span class="investment-badge">Mid-Market</span>
+                </div>
+                <p class="investment-note">Balanced ticket size and broad renter base suited to yield-first portfolio strategy.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 150-250 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>9-12%</span></p>
+                </div>
+              </article>
+
+              <article class="investment-card">
+                <div class="investment-card-top">
+                  <p class="investment-location">Damac Hills</p>
+                  <span class="investment-badge">Golf Community</span>
+                </div>
+                <p class="investment-note">Lifestyle-led golf district delivering steady occupancy and premium family appeal.</p>
+                <div class="investment-metrics">
+                  <p><strong>Price Band</strong><span>AED 220-380 / sqft</span></p>
+                  <p><strong>Expected ROI</strong><span>7-9%</span></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-plot-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="featured-plot-shell">
+              <img class="featured-plot-bg" src="assets/images/featured.jpg" alt="Luxury Meydan residential architecture" />
+              <div class="featured-plot-overlay"></div>
+
+              <div class="featured-plot-content">
+                <div class="featured-plot-left">
+                  <p class="featured-plot-kicker">Featured Plot Investment</p>
+                  <h2 class="featured-plot-title">Invest in Luxury Living</h2>
+                  <p class="featured-plot-subtitle">Premium Residential Land for Sale in Meydan</p>
+                  <p class="featured-plot-copy">
+                    Secure a high-potential residential plot in Meydan District 11, one of Dubai’s most strategically
+                    positioned growth corridors for luxury villa development and long-term capital appreciation.
+                  </p>
+
+                  <div class="featured-plot-specs">
+                    <p><span>Location</span><strong>Meydan District 11</strong></p>
+                    <p><span>Asset Type</span><strong>Residential Plot for Sale</strong></p>
+                    <p><span>Plot Size</span><strong>30,000 sqft</strong></p>
+                    <p><span>GFA</span><strong>90,200 sqft</strong></p>
+                    <p><span>Use</span><strong>Residential</strong></p>
+                  </div>
+
+                  <div class="featured-plot-actions">
+                    <a href="#about" class="featured-plot-cta">Register Interest</a>
+                    <a href="tel:+971505795596" class="featured-plot-phone">+971-50-5795596</a>
+                  </div>
+                </div>
+
+                <div class="featured-plot-right">
+                  <article class="featured-plot-stat">
+                    <h3>$4.2M</h3>
+                    <p class="featured-plot-stat-label">Masterpiece</p>
+                  </article>
+                  <article class="featured-plot-stat">
+                    <h3>$3M</h3>
+                    <p class="featured-plot-stat-label">Signature</p>
+                  </article>
+                  <article class="featured-plot-stat">
+                    <h3>$2.5M</h3>
+                    <p class="featured-plot-stat-label">Prestige</p>
+                  </article>
+                  <article class="featured-plot-stat">
+                    <h3>$1.8M</h3>
+                    <p class="featured-plot-stat-label">Exclusive</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="why-choose-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="why-choose-top">
+              <div>
+                <p class="why-choose-kicker">Why Choose Us</p>
+                <h2 class="why-choose-title">Why Choose TheGreenVentures?</h2>
+              </div>
+            </div>
+
+            <div class="why-choose-features">
+              <article class="why-choose-feature">
+                <h3>Land-First Specialists</h3>
+                <p>
+                  We focus only on Dubai land and plots, so every recommendation is sharper, faster, and built around
+                  real market demand.
+                </p>
+              </article>
+
+              <article class="why-choose-feature">
+                <h3>Transparent Process</h3>
+                <p>
+                  From sourcing to due diligence and negotiation, you get clear guidance, verified numbers, and no
+                  guesswork.
+                </p>
+              </article>
+
+              <article class="why-choose-feature">
+                <h3>High-Quality Opportunities</h3>
+                <p>
+                  We shortlist premium plots in strong locations with solid upside potential for both end-use and
+                  long-term investment.
+                </p>
+              </article>
+            </div>
+
+            <div class="why-choose-gallery js-why-carousel">
+              <img src="https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Modern interior with accent chair" />
+              <img src="https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Luxury lounge interior" />
+              <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Minimal contemporary living room" />
+              <img src="https://images.pexels.com/photos/6489127/pexels-photo-6489127.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Premium interior design detail" />
+              <img src="https://images.pexels.com/photos/6492394/pexels-photo-6492394.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Elegant neutral interior styling" />
+              <img src="https://images.pexels.com/photos/6585752/pexels-photo-6585752.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="High-end living interior concept" />
+              <img src="https://images.pexels.com/photos/6970069/pexels-photo-6970069.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Premium modern bedroom interior" />
+              <img src="https://images.pexels.com/photos/6489092/pexels-photo-6489092.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Refined contemporary interior finish" />
+            </div>
+
+            <div class="why-choose-footer">
+              <div class="why-choose-arrows">
+                <button class="js-why-prev" type="button" aria-label="Previous images">
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-left.svg" alt="" aria-hidden="true" />
+                </button>
+                <button class="js-why-next" type="button" aria-label="Next images">
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-right.svg" alt="" aria-hidden="true" />
+                </button>
+              </div>
+              <p>Selected premium projects and interior inspirations</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="trust-proof-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="trust-proof-head">
+              <p class="trust-proof-kicker">Client Trust &amp; Proof</p>
+              <h2>What Our Customers Say</h2>
+            </div>
+
+            <div class="trust-testimonials js-trust-carousel">
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=11" alt="Portrait of investor from London" />
+                <p>
+                  “Green Ventures helped us identify a premium plot with stronger upside than what we were seeing in
+                  the open market. The process was clear, professional, and fast.”
+                </p>
+                <h3>Investor from London</h3>
+              </article>
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=32" alt="Portrait of family office representative from UAE" />
+                <p>
+                  “From shortlisting to negotiation, every step was handled with strong local insight. We closed with
+                  confidence and a clear long-term plan.”
+                </p>
+                <h3>Family Office, UAE</h3>
+              </article>
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=49" alt="Portrait of private investor from Singapore" />
+                <p>
+                  “What stood out most was transparency. Every location comparison, price range, and return estimate
+                  was explained clearly before we made our decision.”
+                </p>
+                <h3>Private Investor, Singapore</h3>
+              </article>
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=22" alt="Portrait of investor from Riyadh" />
+                <p>
+                  “Their land-first strategy gave us clarity immediately. We avoided overpriced options and secured a
+                  plot with stronger medium-term upside.”
+                </p>
+                <h3>Investor, Riyadh</h3>
+              </article>
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=44" alt="Portrait of investor from Mumbai" />
+                <p>
+                  “Professional execution from inquiry to closing. Documentation, negotiations, and timelines were all
+                  handled with precision.”
+                </p>
+                <h3>HNWI Client, Mumbai</h3>
+              </article>
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=58" alt="Portrait of investor from Qatar" />
+                <p>
+                  “We appreciated the honest market context. Every recommendation was backed by numbers, not sales
+                  pressure.”
+                </p>
+                <h3>Investor, Qatar</h3>
+              </article>
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=16" alt="Portrait of investor from Berlin" />
+                <p>
+                  “Green Ventures gave us confidence as first-time Dubai buyers. The team made the entire process
+                  straightforward and transparent.”
+                </p>
+                <h3>Investor, Berlin</h3>
+              </article>
+              <article class="trust-testimonial">
+                <img class="trust-avatar" src="https://i.pravatar.cc/120?img=27" alt="Portrait of investor from Hong Kong" />
+                <p>
+                  “Strong local insight and sharp negotiation support. We closed at better terms than expected and are
+                  already planning our next acquisition.”
+                </p>
+                <h3>Investor, Hong Kong</h3>
+              </article>
+            </div>
+
+            <div class="trust-testimonials-footer">
+              <div class="trust-testimonials-arrows">
+                <button class="js-trust-prev" type="button" aria-label="Previous testimonials">
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-left.svg" alt="" aria-hidden="true" />
+                </button>
+                <button class="js-trust-next" type="button" aria-label="Next testimonials">
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-right.svg" alt="" aria-hidden="true" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="why-dubai-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="why-dubai-layout">
+              <div class="why-dubai-left">
+                <div class="why-dubai-head">
+                  <p class="why-dubai-kicker">Why Dubai / Why Now</p>
+                  <h2>New Premium Plot Opportunities in High-Growth Zones</h2>
+                </div>
+
+                <div class="why-dubai-summary">
+                  <p class="why-dubai-eyebrow">Dubai Land Investment</p>
+                  <h3>Strategic entry across tax-efficient, infrastructure-backed markets</h3>
+                  <p>
+                    Strong migration, capital inflow, and master-planned expansion continue to support long-term demand
+                    for well-positioned land opportunities.
+                  </p>
+                  <a href="#contact" class="why-dubai-request-btn">Request Plot Details</a>
+                </div>
+
+                <div class="why-dubai-highlights">
+                  <p class="why-dubai-highlights-title">Why it matters now</p>
+                  <div class="why-dubai-highlight-grid">
+                    <article>
+                      <h4>Tax Efficiency</h4>
+                      <p>0% annual property tax supports stronger net yield.</p>
+                    </article>
+                    <article>
+                      <h4>Population Growth</h4>
+                      <p>Rising demand from global professionals and investors.</p>
+                    </article>
+                    <article>
+                      <h4>Infrastructure Pipeline</h4>
+                      <p>Transport and community expansion drives land value.</p>
+                    </article>
+                    <article>
+                      <h4>Entry Window</h4>
+                      <p>Current pricing remains attractive in emerging premium zones.</p>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="why-dubai-contact">
+                  <p>Let’s Get In Touch</p>
+                  <a href="tel:+971505795596">+971-50-5795596</a>
+                  <a href="mailto:hello@thegreenventures.ae">hello@thegreenventures.ae</a>
+                  <span>Dubai, United Arab Emirates</span>
+                </div>
+              </div>
+
+              <div class="why-dubai-right">
+                <img
+                  src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1800"
+                  alt="Premium modern villa representing Dubai luxury opportunities"
+                />
+                <div class="why-dubai-brand-note">
+                  <h3>GREEN VENTURES</h3>
+                  <p>Plots and land investment specialists in Dubai and the UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="faq-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="faq-head">
+              <p class="faq-kicker">Investor FAQ</p>
+              <h2>Answers to Key Land Investment Questions</h2>
+            </div>
+
+            <div class="faq-accordion">
+              <article class="faq-item is-open">
+                <button class="faq-question" type="button" aria-expanded="true">
+                  <span>Can foreign investors buy land in Dubai?</span>
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-down.svg" alt="" aria-hidden="true" />
+                </button>
+                <div class="faq-answer">
+                  <p>Yes. In designated freehold zones, non-UAE nationals can buy, hold, and resell property and land assets.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>What is the typical legal process for acquisition?</span>
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-down.svg" alt="" aria-hidden="true" />
+                </button>
+                <div class="faq-answer">
+                  <p>The process includes reservation, SPA review, due diligence, payment milestones, and final transfer registration with DLD.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>Are payment plans available for premium plots?</span>
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-down.svg" alt="" aria-hidden="true" />
+                </button>
+                <div class="faq-answer">
+                  <p>Many developers and select private sellers offer structured payment terms depending on location, project stage, and deal size.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>What transfer and transaction costs should I expect?</span>
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-down.svg" alt="" aria-hidden="true" />
+                </button>
+                <div class="faq-answer">
+                  <p>Typical costs include DLD transfer fees, trustee fees, and administrative charges. We provide a full cost sheet before commitment.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>How do you evaluate ROI potential on a plot?</span>
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-down.svg" alt="" aria-hidden="true" />
+                </button>
+                <div class="faq-answer">
+                  <p>We assess entry pricing, nearby transactions, infrastructure catalysts, development use cases, and likely demand absorption.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>Can you support international buyers remotely?</span>
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-down.svg" alt="" aria-hidden="true" />
+                </button>
+                <div class="faq-answer">
+                  <p>Yes. We regularly support overseas clients with virtual tours, remote documentation support, and secure transaction coordination.</p>
+                </div>
+              </article>
+
+              <article class="faq-item">
+                <button class="faq-question" type="button" aria-expanded="false">
+                  <span>How quickly can I close a land transaction?</span>
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-down.svg" alt="" aria-hidden="true" />
+                </button>
+                <div class="faq-answer">
+                  <p>Timeline depends on seller readiness and due diligence scope, but many transactions can close in a few weeks with prepared documentation.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="blog-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="blog-head">
+              <p class="blog-kicker">Blogs</p>
+              <h2>Latest Dubai Land Investment Blogs</h2>
+            </div>
+
+            <div class="blog-grid js-blog-carousel">
+              <article class="blog-card">
+                <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Modern Dubai villa architecture" />
+                <div class="blog-card-body">
+                  <p class="blog-meta">Blogs</p>
+                  <h3>Where Premium Plot Demand is Growing in 2026</h3>
+                  <a href="#contact">Read Blog</a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <img src="https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Luxury residential community" />
+                <div class="blog-card-body">
+                  <p class="blog-meta">Blogs</p>
+                  <h3>How to Evaluate Land ROI Before You Buy</h3>
+                  <a href="#contact">Read Blog</a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <img src="https://images.pexels.com/photos/280222/pexels-photo-280222.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Dubai skyline and premium developments" />
+                <div class="blog-card-body">
+                  <p class="blog-meta">Blogs</p>
+                  <h3>Off-Market Land Opportunities: What to Check First</h3>
+                  <a href="#contact">Read Blog</a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Premium villa exterior at sunset" />
+                <div class="blog-card-body">
+                  <p class="blog-meta">Blogs</p>
+                  <h3>Top Freehold Zones for Long-Term Land Appreciation</h3>
+                  <a href="#contact">Read Blog</a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <img src="https://images.pexels.com/photos/6585603/pexels-photo-6585603.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Contemporary premium interior and lifestyle view" />
+                <div class="blog-card-body">
+                  <p class="blog-meta">Blogs</p>
+                  <h3>How Global Buyers Structure Dubai Land Portfolios</h3>
+                  <a href="#contact">Read Blog</a>
+                </div>
+              </article>
+
+              <article class="blog-card">
+                <img src="https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Luxury residential property with pool" />
+                <div class="blog-card-body">
+                  <p class="blog-meta">Blogs</p>
+                  <h3>Residential vs Mixed-Use Plots: Which Fits Your Strategy?</h3>
+                  <a href="#contact">Read Blog</a>
+                </div>
+              </article>
+            </div>
+
+            <div class="blog-footer">
+              <div class="blog-arrows">
+                <button class="js-blog-prev" type="button" aria-label="Previous blogs">
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-left.svg" alt="" aria-hidden="true" />
+                </button>
+                <button class="js-blog-next" type="button" aria-label="Next blogs">
+                  <img src="https://cdn.jsdelivr.net/npm/heroicons@2.2.0/24/solid/chevron-right.svg" alt="" aria-hidden="true" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact-form" class="contact-form-section px-5 py-20 md:px-8 md:py-24 xl:px-12">
+          <div class="mx-auto max-w-[1480px]">
+            <div class="contact-form-shell">
+              <div class="contact-form-left">
+                <p class="contact-form-kicker">Premium Contact</p>
+                <h2>Speak with a Dubai Land Investment Advisor</h2>
+                <p>
+                  Share your requirements and our team will contact you with curated opportunities aligned to your
+                  budget, timeline, and target returns.
+                </p>
+                <div class="contact-form-details">
+                  <a href="tel:+971505795596">+971-50-5795596</a>
+                  <a href="mailto:hello@thegreenventures.ae">hello@thegreenventures.ae</a>
+                  <a href="https://thegreenventures.ae/">thegreenventures.ae</a>
+                  <span>Dubai, United Arab Emirates</span>
+                </div>
+              </div>
+
+              <form class="contact-form-right">
+                <div class="contact-form-grid">
+                  <label>
+                    Full Name
+                    <input type="text" placeholder="Your full name" />
+                  </label>
+                  <label>
+                    Phone Number
+                    <input type="tel" placeholder="+971..." />
+                  </label>
+                  <label>
+                    Email Address
+                    <input type="email" placeholder="you@example.com" />
+                  </label>
+                  <label>
+                    Budget Range
+                    <input type="text" placeholder="AED 1M - AED 5M" />
+                  </label>
+                  <label class="contact-form-wide">
+                    Preferred Area
+                    <input type="text" placeholder="Meydan, Dubai Hills, Business Bay..." />
+                  </label>
+                  <label class="contact-form-wide">
+                    Investment Brief
+                    <textarea rows="4" placeholder="Tell us what type of land opportunity you are looking for"></textarea>
+                  </label>
+                </div>
+                <button type="submit">Submit Inquiry</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="site-footer px-5 py-14 md:px-8 md:py-16 xl:px-12">
+        <div class="mx-auto max-w-[1480px]">
+          <div class="footer-cta">
+            <p class="footer-cta-kicker">Ready to Move Forward?</p>
+            <h2>Start Your Dubai Land Investment Journey</h2>
+            <p>Book a consultation for expert plot guidance.</p>
+            <div class="footer-cta-actions">
+              <a href="tel:+971505795596" class="footer-cta-primary">Book Investment Consultation</a>
+              <a href="https://wa.me/971505795596" class="footer-cta-secondary">WhatsApp Advisor</a>
+            </div>
+          </div>
+
+          <div class="footer-top">
+            <div>
+              <p class="footer-brand">TheGreenVentures</p>
+              <p class="footer-tagline">
+                Specialist advisory for premium Dubai land and plot investments, built on transparent guidance and
+                long-term value strategy.
+              </p>
+            </div>
+
+            <div class="footer-links">
+              <p>Quick Links</p>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="blogs.html">Blogs</a>
+              <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-contact">
+              <p>Contact</p>
+              <a href="tel:+971505795596">+971-50-5795596</a>
+              <a href="mailto:hello@thegreenventures.ae">hello@thegreenventures.ae</a>
+              <span>Dubai, UAE</span>
+            </div>
+
+            <div class="footer-social">
+              <p>Follow</p>
+              <div>
+                <a class="social-link" href="https://x.com" aria-label="X">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M18.244 2H21l-6.01 6.868L22 22h-5.49l-4.3-5.996L6.964 22H4.206l6.43-7.35L2 2h5.63l3.887 5.47zm-.963 18h1.525L6.808 3.894H5.17z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="social-link" href="https://www.instagram.com" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2m0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95zm8.9 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4M12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85m0 1.8A3.35 3.35 0 1 0 15.35 12 3.36 3.36 0 0 0 12 8.65"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="social-link" href="https://www.facebook.com" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M13.5 22v-8h2.68l.4-3h-3.08V9.08c0-.87.25-1.46 1.5-1.46h1.6V4.94a19.45 19.45 0 0 0-2.33-.12c-2.3 0-3.87 1.4-3.87 4v2.18H8v3h2.4v8z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>© 2026 TheGreenVentures. All rights reserved.</p>
+            <div>
+              <a href="privacy.html">Privacy Policy</a>
+              <a href="terms.html">Terms</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

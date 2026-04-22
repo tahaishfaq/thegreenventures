@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms | The Green Ventures</title>
+    <meta name="description" content="Terms of use for The Green Ventures website." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { pine: "#0f2f2a", forest: "#17463d", sage: "#b7cfbf", sand: "#d7c4a7", mist: "#eef4f1", ink: "#071411" },
+            fontFamily: { display: ["Sora", "sans-serif"], body: ["Manrope", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="bg-ink font-body text-mist antialiased">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="header-bar mx-auto grid max-w-[1480px] grid-cols-[1fr_auto] items-center gap-4 px-5 py-6 md:px-8 xl:grid-cols-[1fr_auto_1fr] xl:px-12">
+          <a href="index.html" class="logo-wrap"><span class="logo-mark">TheGreenVentures</span></a>
+          <nav class="nav-panel hidden items-center justify-center gap-6 xl:flex">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About us</a>
+            <a class="nav-link" href="land-investment-guide.html">Land Guide</a>
+            <a class="nav-link" href="blogs.html">Blogs</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+          <button class="menu-toggle xl:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+        </div>
+      </header>
+
+      <main class="px-5 py-16 md:px-8 md:py-20 xl:px-12">
+        <section class="mx-auto max-w-4xl">
+          <p class="section-kicker">Legal</p>
+          <h1 class="about-title">Terms & Conditions</h1>
+          <p class="section-copy">Please review these terms before using our website and services.</p>
+          <div class="about-copy-wrap mt-8">
+            <p class="section-copy">Information on this website is provided for general guidance and does not constitute legal, tax, or financial advice.</p>
+            <p class="section-copy">Investment outcomes may vary based on market conditions, regulations, and individual decisions.</p>
+            <p class="section-copy">All materials on this site, including branding and content, are owned by The Green Ventures unless otherwise stated.</p>
+            <p class="section-copy">By using this website, you agree to these terms and applicable UAE laws.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer px-5 py-14 md:px-8 md:py-16 xl:px-12">
+        <div class="mx-auto max-w-[1480px]">
+          <div class="footer-top">
+            <div class="footer-social">
+              <p>Follow</p>
+              <div>
+                <a class="social-link" href="https://x.com" aria-label="X">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M18.244 2H21l-6.01 6.868L22 22h-5.49l-4.3-5.996L6.964 22H4.206l6.43-7.35L2 2h5.63l3.887 5.47zm-.963 18h1.525L6.808 3.894H5.17z"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="social-link" href="https://www.instagram.com" aria-label="Instagram">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2m0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95zm8.9 1.35a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4M12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85m0 1.8A3.35 3.35 0 1 0 15.35 12 3.36 3.36 0 0 0 12 8.65"
+                    ></path>
+                  </svg>
+                </a>
+                <a class="social-link" href="https://www.facebook.com" aria-label="Facebook">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M13.5 22v-8h2.68l.4-3h-3.08V9.08c0-.87.25-1.46 1.5-1.46h1.6V4.94a19.45 19.45 0 0 0-2.33-.12c-2.3 0-3.87 1.4-3.87 4v2.18H8v3h2.4v8z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2026 TheGreenVentures. All rights reserved.</p>
+            <div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
